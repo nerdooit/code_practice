@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "Argument is $1 !!"
+echo "Running.. g++ --std=c++1z $1"
+g++ --std=c++1z $1
