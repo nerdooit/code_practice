@@ -24,14 +24,13 @@ int main()
 		}
 		avg /= N;
 
-		for (int k = 0; k < N; k++) {
-			if (avg < student[k]) {
+		for (int j = 0; j < N; j++) {
+			if (avg < student[j]) {
 				cnt++;
 			}
 		}
 		cout.setf(ios::showpoint);
-		cout << fixed;
-		cout.precision(3);
-		cout << (cnt/N)*100 << "%\n";
+		cout.precision(5);
+		cout << cnt/N*100 << "%\n";
 	}
 }
