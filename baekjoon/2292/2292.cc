@@ -4,25 +4,18 @@ using namespace std;
 
 int main()
 {
-	long long N,cnt=1,acc=1;
+	long long N,cnt=0,acc=1, tmp=1, tmp1=6;
 	cin >> N;
 
-
-
-
-	if (N == 1) {
-		cout << 1;
-		return 0;
-	}
-
-	N = (N-1)/6;
-
-	while(1) {
-		if (acc > N) {
+	while (1) {
+		if (tmp < N) {
+			tmp += tmp1;
+		} else {
 			break;
 		}
-		cnt++;
-		acc += cnt;
+		acc++;
+		tmp1 += 6;
 	}
-	cout << 1 + cnt;
+
+	cout << acc;
 }
