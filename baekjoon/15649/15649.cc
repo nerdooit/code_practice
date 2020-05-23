@@ -1,23 +1,32 @@
 #include <iostream>
-#include <stack>
 
 using namespace std;
 
-int N, M, arr[9];
+int N, M, arr[8];
+bool check[8];
 
-void dfs (int cnt) {
-	for (int i = 1; i <= N; i++) {
-		arr[]
+void dfs(int cnt) {
+
+	if (cnt == M) {
+		for (int i = 0; i < M; i++) {
+			printf("%d ",arr[i]);
+		}
+		cout << "\n";
+		return;
+	}
+
+	for (int i = 0; i < N; i++) {
+		if (!check[i]) {
+			check[i] = true;
+			arr[cnt] = i+1;
+			dfs(cnt+1);
+			check[i] = false;
+		}
 	}
 }
 
-
-
 int main()
 {
-	stack<int> s;
-
 	cin >> N >> M;
-
-
+	dfs(0);
 }
