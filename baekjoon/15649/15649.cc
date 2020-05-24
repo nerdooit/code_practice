@@ -6,7 +6,6 @@ int N, M, arr[8];
 bool check[8];
 
 void dfs(int cnt) {
-
 	if (cnt == M) {
 		for (int i = 0; i < M; i++) {
 			printf("%d ",arr[i]);
