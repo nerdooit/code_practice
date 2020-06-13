@@ -36,7 +36,6 @@ int main()
 			}
 		}
 
-		if (!st.empty()) cout << "no" << endl;
-		else cout << "yes" << endl;
+		puts(!st.empty() ? "no" : "yes");
 	}
 }
