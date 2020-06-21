@@ -3,7 +3,6 @@
 -> 귀찮으면 vector로 잡기
 
 ### endl 은 느리다
-
 ### cout 도 느리다 -> chrono 써서 계산
 
 
